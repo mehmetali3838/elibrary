@@ -1,9 +1,11 @@
 ![Diagram](https://github.com/mehmetali3838/elibrary/assets/147253627/1372894b-33f9-49b3-b199-16db4ff03bb7)
 
 
+*******************************************************
 
-1- Kütüphaneden alınan toplam kitap sayısı kaçtır? --->>>
+1- Kütüphaneden alınan toplam kitap sayısı kaçtır? ***
 SELECT COUNT(*) as total_books FROM books;
+*******************************************************
 2 - Kütüphanede hiç kitap kiralamamış öğrencilerin listesi --->>>
 SELECT u.* FROM users u
 LEFT JOIN user_books ub ON u.id = ub.user_id
