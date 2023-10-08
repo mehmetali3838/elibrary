@@ -2,14 +2,13 @@
 
 
 *******************************************************
-
 1- Kütüphaneden alınan toplam kitap sayısı kaçtır? ***
-SELECT COUNT(*) as total_books FROM books;
+    SELECT COUNT(*) as total_books FROM books;
 *******************************************************
 2 - Kütüphanede hiç kitap kiralamamış öğrencilerin listesi --->>>
-SELECT u.* FROM users u
-LEFT JOIN user_books ub ON u.id = ub.user_id
-WHERE ub.user_id IS NULL;
+    SELECT u.* FROM users u
+    LEFT JOIN user_books ub ON u.id = ub.user_id
+    WHERE ub.user_id IS NULL;
 *******************************************************
 3- En çok kitap kiralayan öğrenci kimdir? --->>>
 SELECT u.*, COUNT(ub.book_id) as rented_books_count
